@@ -1,3 +1,6 @@
+(function () {
+    "use strict";
+
 // let chat = '<!> Chandler Bot V1 <!>';
 let server_size = 81;
 
@@ -62,7 +65,7 @@ let element_ui = document.createElement("div");
 element_ui.innerHTML = ui;
 document.body.appendChild(element_ui);
 
-let canvasx = document.getElementById("canvas");
+let canvas = document.getElementById("canvas");
 let canvas_1 = document.createElement("canvas");
 canvas_1.style.zIndex = 10;
 canvas_1.style.position = "absolute";
@@ -122,8 +125,8 @@ setInterval(() => {
         player.isLeader = 1;
         player.isPremiumMember = 1;
         player.color.a = "gold";
-        canvas_1.width = canvasx.width;
-        canvas_1.height = canvasx.height;
+        canvas_1.width = canvas.width;
+        canvas_1.height = canvas.height;
         let plr_screen_position = c2.getRelPos(RD.pool[c3]);
         plr_screen_position.x *= j5;
         plr_screen_position.y *= j5;
@@ -182,3 +185,5 @@ const attack_player = (user) => {
 const defense_me = () => {
     console.log(RD.pool[c3].username);
 };
+
+    })();
