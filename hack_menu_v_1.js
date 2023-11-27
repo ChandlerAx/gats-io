@@ -1,6 +1,7 @@
 (function () {
     "use strict";
 
+function x() {
 // let chat = '<!> Chandler Bot V1 <!>';
 let server_size = 81;
 
@@ -186,4 +187,7 @@ const defense_me = () => {
     console.log(RD.pool[c3].username);
 };
 
+}
+
+    x();
     })();
